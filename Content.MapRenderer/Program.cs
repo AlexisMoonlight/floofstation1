@@ -160,7 +160,7 @@ namespace Content.MapRenderer
                 var i = 0;
                 try
                 {
-                    await foreach (var renderedGrid in MapPainter.Paint(map))
+                    await foreach (var renderedGrid in MapPainter.PaintGrind())
                     {
                         var grid = renderedGrid.Image;
                         Directory.CreateDirectory(directory);
